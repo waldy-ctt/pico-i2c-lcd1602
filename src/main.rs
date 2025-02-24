@@ -73,9 +73,10 @@ fn main() -> !{
         let _ = lcd.write_bytes(b"Nguyen Thi", &mut delay);
         let _ = lcd.set_cursor_pos(40, &mut delay);
         let _ = lcd.write_bytes(b"Minh Thu", &mut delay);
+        
+        delay.delay_ms(1000);
         let _ = lcd.clear(&mut delay);
 
-        delay.delay_ms(10000);
 
     }
 }
